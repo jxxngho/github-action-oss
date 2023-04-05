@@ -15,7 +15,7 @@ runs:
      with :
        python-version : "3.11"
    - name : Install Dependencies
-     run : pip installl -r requirement.txt
+     run : pip install -r requirement.txt
      shell : bash
    - name: Pass Inputs to Shell
      run : echo "INPUT_NUM=${{}}" >> $GITHUB_ENV
