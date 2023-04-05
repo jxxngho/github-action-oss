@@ -18,8 +18,7 @@ runs:
      run : pip installl -r requirement.txt
      shell : bash
    - name: Pass Inputs to Shell
-     run : |
-       echo "INPUT_NUM=${{}}" >> $GITHUB_ENV
+     run : echo "INPUT_NUM=${{}}" >> $GITHUB_ENV
      shell : bash
    - name: Fetch the number square
      id: get-square
